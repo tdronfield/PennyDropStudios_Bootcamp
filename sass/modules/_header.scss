@@ -1,0 +1,15 @@
+.mainHeader {
+    display: flex;
+    
+    .headerIcon{
+        width: 80px;
+        height: 80px;
+        background-color: $placeholder;
+    }
+
+    .burgerMenu {
+        width: 48px;
+        height: 35px;
+        background-color: $placeholder;
+    }
+}
