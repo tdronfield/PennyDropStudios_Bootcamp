@@ -1,0 +1,16 @@
+@import "_vars";
+@import "modules/_header";
+@import "modules/_homeWWD";
+@import "modules/_homeWork";
+@import "modules/_homeTeam";
+@import "modules/_footer";
+@import "modules/_hero";
+
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: auto 0;
+}

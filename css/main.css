@@ -1,0 +1,197 @@
+.mainHeader {
+  width: 100%;
+}
+.mainHeader .headerIcon {
+  width: 30%;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+.mainHeader .burgButton {
+  float: right;
+  width: 48px;
+  height: 35px;
+  margin: 10px 20px;
+}
+.mainHeader .burgerMenu {
+  z-index: 1;
+  width: 100%;
+}
+.mainHeader .wideNav {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .mainHeader {
+    display: inline-flex;
+  }
+  .mainHeader .wideNav {
+    display: inline-block !important;
+  }
+  .mainHeader .wideNav ul {
+    background-color: #c9e9eb;
+    padding: 20px;
+  }
+  .mainHeader .wideNav ul li {
+    display: inline;
+    padding: 5px;
+  }
+  .mainHeader .wideNav ul li a {
+    text-decoration: none;
+  }
+  .mainHeader button {
+    display: none;
+  }
+}
+.whatWeDo img {
+  width: 100%;
+}
+.whatWeDo h2 {
+  margin: 50px 20px 50px 50px;
+}
+.whatWeDo p {
+  padding: 0 10px 50px 50px;
+}
+.whatWeDo #greatIdeas {
+  background-color: #fbbd4c;
+}
+.whatWeDo #greatIdeas h2 {
+  color: #3d4d6d;
+  font-size: 2.25em;
+}
+.whatWeDo #makeCents {
+  background-color: #fcd662;
+}
+.whatWeDo #makeCents h2 {
+  color: #40acc6;
+  font-size: 2.25em;
+}
+.whatWeDo #pennyDrop {
+  background-color: #40acc6;
+}
+.whatWeDo #pennyDrop h2 {
+  color: #fcd662;
+  font-size: 2.25em;
+}
+
+@media screen and (min-width: 600px) {
+  .whatWeDo #greatIdeas {
+    display: flex;
+  }
+  .whatWeDo #makeCents {
+    display: flex;
+  }
+  .whatWeDo #pennyDrop {
+    display: flex;
+  }
+}
+.ourWork h2 {
+  text-align: center;
+  margin: 50px 0 50px 0;
+  color: #3d4d6d;
+  font-size: 2.25em;
+}
+.ourWork p {
+  display: none;
+}
+.ourWork .workCont {
+  margin: 0 50px;
+}
+.ourWork .workCont h3 {
+  margin: 25px 0;
+  color: #3d4d6d;
+}
+.ourWork .moreof {
+  background-color: #fcd662;
+  padding: 10px;
+  margin: 25px 0;
+}
+
+.enoughWork {
+  background-color: #40acc6;
+  margin: 50px 0 0 0 !important;
+  text-align: center;
+  padding: 50px 30px 50px 30px;
+  font-size: 1.35em;
+}
+.enoughWork p {
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .ourWork p {
+    display: block !important;
+    margin: 50px 50px;
+  }
+  .ourWork .workCont {
+    display: flex;
+    margin: 50px 35px !important;
+  }
+  .ourWork .workCont div {
+    margin: 0 auto;
+    width: 220px;
+  }
+}
+.meetTheTeam {
+  background-image: url(../../images/meetTeamBg.jpg);
+  text-align: center;
+  padding-top: 50px;
+}
+.meetTheTeam div {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+.meetTheTeam div h2 {
+  padding: 25px 0 25px 0;
+  color: white;
+}
+.meetTheTeam div p {
+  margin-bottom: 25px;
+  color: white;
+}
+.meetTheTeam a {
+  background-color: #fcd662;
+  padding: 10px;
+}
+
+.mainFooter {
+  margin: 50px 0 50px 50px;
+}
+.mainFooter #footCol1 {
+  display: flex;
+}
+.mainFooter #footCol1 #navLinks {
+  margin-left: 50px;
+}
+.mainFooter #footCol2 {
+  display: flex;
+}
+
+#copyright {
+  background-color: #c9e9eb;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.heroHome {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.heroHome h2 {
+  font-size: 2.25em;
+}
+.heroHome img {
+  width: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin: auto 0;
+}
+
+/*# sourceMappingURL=main.css.map */
