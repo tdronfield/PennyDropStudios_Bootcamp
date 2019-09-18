@@ -1,0 +1,58 @@
+.whatWeDo {
+
+    img {
+        width: 100%;
+    }
+    
+    h2 {
+        margin: 50px 20px 50px 50px;
+    }
+
+    p {
+        padding: 0 10px 50px 50px;
+    }
+
+    #greatIdeas {
+        background-color: $penny-yellow;
+
+        h2 {
+            color: $deep-blue;
+            font-size: 2.25em;
+        }
+    }
+
+    #makeCents {
+        background-color: $light-yellow;
+
+        h2 {
+            color: $penny-blue;
+            font-size: 2.25em;
+        }
+    }
+
+    #pennyDrop {
+        background-color: $penny-blue;
+
+        h2 {
+            color: $light-yellow;
+            font-size: 2.25em;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .whatWeDo {
+        
+        #greatIdeas{
+            display: flex;
+        }
+
+        #makeCents{
+            display: flex;
+        }
+
+        #pennyDrop{
+            display: flex;
+        }
+    }
+}

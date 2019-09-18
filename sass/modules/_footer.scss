@@ -1,0 +1,21 @@
+.mainFooter {
+    margin: 50px 0 50px 50px;
+
+    #footCol1 {
+        display: flex;
+
+        #navLinks {
+            margin-left: 50px;
+        }
+    }
+
+    #footCol2 {
+        display: flex;
+    }
+}
+
+#copyright {
+    background-color: $light-blue;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}

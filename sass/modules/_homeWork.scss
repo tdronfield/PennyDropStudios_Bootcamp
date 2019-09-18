@@ -1,0 +1,63 @@
+.ourWork {
+    
+    h2 {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        color: $deep-blue;
+        font-size: 2.25em;
+    }
+
+    p {
+        display: none;
+    }
+
+    .workCont {
+        margin: 0 50px; 
+
+        h3 {
+            margin: 25px 0;
+            color: $deep-blue;
+        }
+    }
+
+    .moreof {
+        background-color: $light-yellow;
+        padding: 10px;
+        margin: 25px 0;
+    }
+    
+    
+}
+
+.enoughWork {
+    background-color: $penny-blue;
+    margin: 50px 0 0 0 !important;
+    text-align: center;
+    padding: 50px 30px 50px 30px;
+    font-size: 1.35em;
+
+    p {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ourWork {
+
+        p {
+            display: block !important;
+            margin: 50px 75px;
+            text-align: center;
+        }
+
+        .workCont {
+            display: flex;
+            margin: 50px 35px !important;
+
+            div{
+                margin: 0 auto;
+                width: 220px;
+            }
+        }
+    }
+}

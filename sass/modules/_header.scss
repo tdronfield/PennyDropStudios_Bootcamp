@@ -1,15 +1,60 @@
 .mainHeader {
-    display: flex;
+    width: 100%;
     
-    .headerIcon{
-        width: 80px;
-        height: 80px;
-        background-color: $placeholder;
+    .headerIcon {
+        width: 30%;
+        display: inline-block;
+        margin: 10px 0 0 10px;
+    }
+
+    .burgButton {
+        float: right;
+        width: 48px;
+        height: 35px;
+        margin: 10px 20px;
     }
 
     .burgerMenu {
-        width: 48px;
-        height: 35px;
-        background-color: $placeholder;
+        z-index: +1;
+        width: 100%;
+    }
+
+    .wideNav {
+        display: none;
+    }    
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) {
+    .mainHeader {
+
+        .wideNav {
+            display: block !important;
+            float: right;
+
+            ul {
+                background-color: $light-blue;
+                padding: 20px;
+
+                li {
+                    display: inline;
+                    padding: 5px;
+
+                    a{
+                        text-decoration: none;
+                        
+                        a:hover {
+                            background-color: $penny-yellow;
+                        }
+                    }
+
+                }
+            }
+        }
+    
+        button {
+            display: none;
+        }
     }
 }
