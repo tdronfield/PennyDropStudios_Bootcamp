@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x33_d-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 172 170" style="enable-background:new 0 0 172 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#186999;}
+	.st1{fill:#FFFFFF;}
+</style>
+<circle id="background_1_" class="st0" cx="86.7" cy="85.28" r="83"/>
+<g id="_x33_d-cube">
+	<path class="st1" d="M88.96,27.94c-3.08,0.25-8.24,2.57-12.1,4.63s-30.89,17-33.98,19.32s-5.92,5.66-5.92,14.67s0,29.86,0,35.78
+		s1.03,11.58,6.18,14.67s31.66,18.54,36.56,20.85c4.89,2.32,11.07,3.86,18.02,0c6.95-3.86,28.83-15.7,35.78-20.34
+		c6.95-4.63,6.69-8.24,6.69-15.7s0-31.15,0-37.59s-2.06-9.53-10.56-14.93c-8.5-5.41-28.87-16.84-32.95-19.05
+		C92.3,27.9,90.24,27.84,88.96,27.94z"/>
+	<polygon class="st0" points="88.96,40.69 120.82,59.03 88.57,76.79 56.33,58.74 	"/>
+	<polygon class="st0" points="49.96,70.61 82.01,87.99 82.01,123.9 49.96,106.14 	"/>
+	<polygon class="st0" points="95.52,88.18 127.38,70.61 127.38,105.75 95.52,123.9 	"/>
+</g>
+</svg>
