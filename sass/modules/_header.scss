@@ -2,7 +2,7 @@
     width: 100%;
     
     .headerIcon {
-        width: 30%;
+        width: 20%;
         display: inline-block;
         margin: 10px 0 0 10px;
     }
@@ -12,6 +12,8 @@
         width: 48px;
         height: 35px;
         margin: 10px 20px;
+        background: none;
+        border: none;
     }
 
     .burgerMenu {
@@ -26,12 +28,17 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     .mainHeader {
+
+        .headerIcon{
+            width: 15%;
+        }
 
         .wideNav {
             display: block !important;
             float: right;
+            margin-right: 15px;
 
             ul {
                 background-color: $light-blue;
@@ -41,14 +48,16 @@
                     display: inline;
                     padding: 5px;
 
-                    a{
+                    a {
                         text-decoration: none;
-                        
-                        a:hover {
-                            background-color: $penny-yellow;
-                        }
+                        padding: 10px;
                     }
 
+                    a.selected {
+                        background-color: $light-yellow;
+                        padding-top: 100px;
+                        padding-bottom: 50px;
+                    }
                 }
             }
         }
@@ -57,3 +66,4 @@
             display: none;
         }
     }
+}
