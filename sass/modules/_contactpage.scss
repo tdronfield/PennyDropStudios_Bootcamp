@@ -1,0 +1,29 @@
+.contactPage {
+
+    .contactForm {
+        background-color: $light-yellow;
+
+        h2 {
+            background-color: $penny-yellow;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 1.75em;
+        }
+    }
+
+    .contactInfo {
+        background-color: $penny-blue;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+        
+        div {
+            padding-bottom: 50px;
+        }
+        
+        img {
+            width: 50px;
+        }
+    }
+}

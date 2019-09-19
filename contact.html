@@ -13,10 +13,12 @@
         <h1 class="hidden">Main Header</h1>
         
         <div class="headerIcon">
-            <img src="" alt="" width="80" height="80">
+            <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo">
         </div>
+
+        <button class="burgButton"><img src="images/icons/burger.svg" alt="Burger Menu Button"></button>
         
-        <div class="burgerMenu">
+        <div class="burgerMenu hidden">
             <h3 class="hidden">Condensed Burger Menu</h3>
             <ul>                
                 <li><a href="index.html">HOME</a></li>
@@ -27,19 +29,20 @@
             </ul> 
         </div>
         
-        <div class="hidden wideNav">
+        <div class="wideNav">
             <h3 class="hidden">Full Width Navigation Bar</h3>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
                 <li><a href="featured.html">FEATURED</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
-    </header>
 
-    <main>
+        
+    </header>
+    <main class="contactPage">
         <h1 class="hidden">Contact Information</h1>
 
         <section class="hero">
@@ -49,7 +52,7 @@
 
         <section class="contactForm">
             <form action="">
-                <h2>Contact Us</h2>
+                <h2>Get In Touch</h2>
                 <div> <!-- First Row in Form -->
                     <div></div>
                     <div></div>
@@ -66,52 +69,71 @@
 
         <section class="contactInfo">
             <div id="phone">
-                <img src="" alt="">
-                <h3></h3>
+                <img src="images/icons/sm-phone.svg" alt="Phone Icon">
+                <h3>Phone: 519-559-8902<br> Fax: 519-778-8931</h3>
             </div>
             <div id="email">
-                <img src="" alt="">
-                <h3></h3>
+                <img src="images/icons/sm-email.svg" alt="Email Icon">
+                <h3>info@pennydrop.com</h3>
             </div>
             <div id="address">
-                <img src="" alt="">
-                <h3></h3>
+                <img src="images/icons/sm-address.svg" alt="Address Icon">
+                <h3>1035 Richmond St. #24 <br>N6B 4X7 London, ON</h3>
             </div>
         </section>
 
     </main>
 
     <footer class="mainFooter">
-            <h1 class="hidden">Main Footer</h1>
-            <div id="footCol1">
-                <div id="socialAndIcon">
-                    <div id="footerSocial">
-                        <h3 class="hidden">Footer Social Media Links</h3>
-                        <ul>
-                            <li><a href=""><img src="" alt=""></a></li>
-                            <li><a href=""><img src="" alt=""></a></li>
-                            <li><a href=""><img src="" alt=""></a></li>
-                            <li><a href=""><img src="" alt=""></a></li>
-                        </ul> 
-                    </div>
-                    <div id="footerIcon">
-                        <img src="" alt="">
-                    </div>
+        <h1 class="hidden">Main Footer</h1>
+        <div id="footCol1">
+            <div id="socialAndIcon">
+                <div id="footerSocial">
+                    <h3 class="hidden">Footer Social Media Links</h3>
+                    <ul>
+                        <li><a href="facebook.com"><img src="images/icons/sm-facebook.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="twitter.com"><img src="images/icons/sm-twitter.svg" alt="Twitter Icon"></a></li>
+                        <li><a href="instagram.com"><img src="images/icons/sm-instagram.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="behance.com"><img src="images/icons/sm-behance.svg" alt="Behance Icon"></a></li>
+                    </ul> 
                 </div>
-                <div id="quickLinks">
-    
+                <div id="footerIcon">
+                    <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo" width="129" height="107">
                 </div>
             </div>
-            <div id="footCol2">
-                <div id="contactInfo">
-                    <p></p>
+            <div id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="featured.html">FEATURED</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footCol2">
+            <div id="contactInfo">
+                <div id="location">
+                    <img src="images/icons/sm-address.svg" alt="Address Icon">
+                    <p>1035 Richmond St. <br><br> Unit 24 N6K4X7 <br><br> London, ON</p>
                 </div>
-                <div id="contactMap">
-                    <img src="" alt="">
+                <div id="phone">
+                    <img src="images/icons/sm-phone.svg" alt="Phone Icon">
+                    <p>519-559-8902</p>
+                </div>
+                <div id="email">
+                    <img src="images/icons/sm-email.svg" alt="Email Icon">
+                    <p>info@pennydrop.com</p>
                 </div>
             </div>
-            <p>© 2019 Copyright Penny Drop Studios</p>
-        </footer>
-        <script src="js/main.js"></script>
-    </body>
+            <div id="contactMap">
+                <img src="images/map.jpg" alt="Map Location on Richmond St.">
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <p>Content © Penny Drop Studio, 2019</p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
 </html>

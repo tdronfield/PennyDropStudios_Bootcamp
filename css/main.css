@@ -2,7 +2,7 @@
   width: 100%;
 }
 .mainHeader .headerIcon {
-  width: 30%;
+  width: 20%;
   display: inline-block;
   margin: 10px 0 0 10px;
 }
@@ -11,6 +11,8 @@
   width: 48px;
   height: 35px;
   margin: 10px 20px;
+  background: none;
+  border: none;
 }
 .mainHeader .burgerMenu {
   z-index: 1;
@@ -21,12 +23,14 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 600px) {
-  .mainHeader {
-    display: inline-flex;
+@media screen and (min-width: 650px) {
+  .mainHeader .headerIcon {
+    width: 15%;
   }
   .mainHeader .wideNav {
-    display: inline-block !important;
+    display: block !important;
+    float: right;
+    margin-right: 15px;
   }
   .mainHeader .wideNav ul {
     background-color: #c9e9eb;
@@ -38,6 +42,12 @@
   }
   .mainHeader .wideNav ul li a {
     text-decoration: none;
+    padding: 10px;
+  }
+  .mainHeader .wideNav ul li a.selected {
+    background-color: #fcd662;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
   .mainHeader button {
     display: none;
@@ -121,7 +131,8 @@
 @media screen and (min-width: 600px) {
   .ourWork p {
     display: block !important;
-    margin: 50px 50px;
+    margin: 50px 75px;
+    text-align: center;
   }
   .ourWork .workCont {
     display: flex;
@@ -133,7 +144,7 @@
   }
 }
 .meetTheTeam {
-  background-image: url(../../images/meetTeamBg.jpg);
+  background-clip: url(../../images/meetTeamBg.jpg);
   text-align: center;
   padding-top: 50px;
 }
@@ -157,16 +168,32 @@
 }
 
 .mainFooter {
-  margin: 50px 0 50px 50px;
+  margin: 50px;
 }
 .mainFooter #footCol1 {
   display: flex;
+  justify-content: space-around;
 }
-.mainFooter #footCol1 #navLinks {
-  margin-left: 50px;
+.mainFooter #footCol1 #footerSocial li {
+  display: inline;
+}
+.mainFooter #footCol1 #footerSocial img {
+  width: 10%;
+}
+.mainFooter #footCol1 #navLinks li {
+  padding-bottom: 20px;
 }
 .mainFooter #footCol2 {
   display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.mainFooter #footCol2 #contactInfo div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.mainFooter #footCol2 #contactInfo img {
+  width: 40px;
 }
 
 #copyright {
@@ -175,6 +202,19 @@
   padding: 50px 0 50px 0;
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 650px) {
+  .mainFooter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainFooter #footCol1 #footerSocial img {
+    width: 20%;
+  }
+  .mainFooter #footCol1 #navLinks {
+    margin-right: 100px;
+  }
+}
 .heroHome {
   text-align: center;
   margin-bottom: 50px;
@@ -186,12 +226,101 @@
   width: 40%;
 }
 
+.portPage h3 {
+  font-size: 2.25em;
+  margin: 50px;
+}
+.portPage a {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.portPage .traaSite {
+  background-color: #095b6b;
+  height: 200px;
+}
+.portPage .traaSite h3 {
+  color: #a3c156;
+}
+.portPage .traaSite a {
+  background-color: #a3c156;
+  color: #095b6b;
+  margin: 50px;
+}
+.portPage .driverSite {
+  background-color: #e6d8b1;
+}
+.portPage .driverSite h3 {
+  color: #eb4c6f;
+}
+.portPage .driverSite a {
+  background-color: #eb4c6f;
+  color: #e6d8b1;
+  margin: 50px;
+}
+.portPage .illSite {
+  background-color: #ef6c89;
+}
+.portPage .illSite h3 {
+  color: #fce0c4;
+}
+.portPage .illSite a {
+  background-color: #fce0c4;
+  color: #ef6c89;
+  margin: 50px;
+}
+
+@font-face {
+  font-family: "kohinoor_banglamedium";
+  src: url("../fonts/kohinoorbangla-medium-webfont.woff2") format("woff2"), url("kohinoorbangla-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.contactPage .contactForm {
+  background-color: #fcd662;
+}
+.contactPage .contactForm h2 {
+  background-color: #fbbd4c;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 1.75em;
+}
+.contactPage .contactInfo {
+  background-color: #40acc6;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+}
+.contactPage .contactInfo div {
+  padding-bottom: 50px;
+}
+.contactPage .contactInfo img {
+  width: 50px;
+}
+
+.projectInfo {
+  margin: 50px 25px;
+}
+.projectInfo h3 {
+  color: #40acc6;
+  font-size: 2.25em;
+}
+.projectInfo p {
+  line-height: 2;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .hidden {
   display: none;
 }
 
 body {
   margin: auto 0;
+}
+
+h1, h2, h3, h4, p, a {
+  font-family: "kohinoor_banglamedium", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
