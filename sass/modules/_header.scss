@@ -1,77 +1,335 @@
-.mainHeader {
-    width: 100%;
-    
-    .headerIcon {
-        width: 20%;
-        display: inline-block;
-        margin: 10px 0 0 10px;
-    }
+/*     MOBILE DEFAULT STYLING      */
 
-    .burgButton {
-        float: right;
-        width: 58px;
-        height: 50px;
-        margin: 10px 20px;
-        background: none;
-        border: none;
-    }
+.hidden{ display:none; }
 
-    .burgerMenu {
-        z-index: +1;
-        width: 100%;
-    }
-
-    .wideNav {
-        display: none;
-    }    
+.clear {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* MEDIA QUERIES */
+#wrapper{ margin: 0 auto; width:100%; background-color:#fff; }
+
+/*    MOBILE MAIN HEADER STYLING BEGINS HERE   */
+
+.mainHeader{
+  margin:0 auto;
+  background-image:url('../images/pennydrop-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+}
+
+.navBlock{
+  width:100%;
+  display:inline-flex;
+  justify-content:space-between;
+}
+
+.headerIcon img{ 
+    width:80px;
+    margin:30px 0 0 30px;
+
+ }
+
+/* hide the menu by default */
+
+.wideNav{ display:none; }
+.socialNav{ display:none; }
+
+#burgerCon{ display:none; margin-top:20px; }
+
+#burgerCon.slideToggle { display: block; }
+
+#mainNav{ width:100%; text-align:right; }
+
+#mainNav button{
+  margin:20px 25px 0 0;
+  outline:none;
+  background: url(../images/icons/burger.svg) center no-repeat;
+  border: 0;
+  width: 50px;
+  height: 45px;
+  transition: all 400ms ease;
+}
+
+#mainNav button.expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#navMobile ul{
+  width:68%;
+  position:absolute;
+  padding-top:10px;
+  z-index:999;
+ }
+
+#navMobile li a{
+  display: block;
+  font-size:14px;
+  font-family:'kohinoor_banglamedium',sans-serif;
+  color:#3d4d6d;
+  padding: 15px 0;
+  text-align: right;
+  padding-right:30px;
+}
+
+#navMobile li{
+  background-color:#c9e9eb;
+  border-bottom: 2px solid #fff;
+}
+
+#navMobile li:first-child { border-top: 2px solid #fff; }
+
+#navMobile li:last-child { margin-bottom: 10px; }
+
+#navMobile li a:hover{ background-color:#c9e9eb; }
+
+/*   HERO STYLING BEGINS HERE  */
+
+.hero{
+  text-align:center;
+  font-family: 'kohinoor_banglamedium',sans-serif;
+  color:#3d4d6d;
+  opacity:0.75;
+}
+
+.first-title{
+  margin:0 auto;
+  height:40px;
+  width:155px;
+  background-color:#fff;
+  margin-top:45px;
+  opacity:0.9;
+}
+
+.first-title h2{
+  font-size:19px;
+  color:#3d4d6d;
+  transform: translateY(54%);
+}
+
+.second-title{
+  margin:0 auto;
+  height:25px;
+  width:290px;
+  background-color:#fff;
+  margin-top:7px;
+  transform: rotate(-4deg);
+  opacity:0.9;
+}
+
+.second-title h2{
+  font-size:14px;
+  color:#3d4d6d;
+  transform: translateY(40%);
+}
+
+.third-title{
+  margin:0 auto;
+  height:30px;
+  width:170px;
+  background-color:#fff;
+  margin-top:12px;
+  transform: rotate(-9deg);
+  opacity:0.9;
+}
+
+.third-title h2{
+  font-size:19px;
+  color:#3d4d6d;
+  transform: translateY(35%);
+}
+
+/*     TABLET MEDIA QUERY BEGINS    */
 
 @media screen and (min-width: 641px) {
-    .mainHeader {
 
-        .headerIcon{
-            width: 15%;
-        }
+  .mainHeader{ height:600px; }
 
-        .wideNav {
-            display: block !important;
-            float: right;
-            margin-right: 50px;
+  #navMobile{ display:none; }
 
-            #deskNav {
-                ul {
-                    background-color: $light-blue;
-                    padding: 20px;
-    
-                    li {
-                        display: inline;
-                        padding: 5px;
-    
-                        a {
-                            text-decoration: none;
-                            padding: 10px;
-                        }
-    
-                        a.selected {
-                            background-color: $light-yellow;
-                            padding-top: 100px;
-                            padding-bottom: 50px;
-                        }
-                    }
-                }
-            }
-        }
-    
-        button {
-            display: none;
-        }
-    }
+  .navBlock{
+      margin:0 auto;
+      width:100%;
+      justify-content:space-between;
+  }
+
+  .headerIcon img{ width:120px; margin:40px 0 0 40px;}
+
+  .wideNav{ display:block; margin-right:40px; }
+
+  #deskNav{
+    background-color:#c9e9eb;
+    width:425px;
+    margin-top:40px;
+    padding:12px 0 12px 0;
+    display:inline-flex;
+    justify-content:center;
+  }
+
+  #deskNav li{ display:inline; }
+
+  #deskNav a{
+    font-family: 'kohinoor_banglaregular',sans-serif;
+    font-size:14px;
+    color:#000;
+    padding:0 20px 0 20px;
+  }
+
+  #deskNav a.selected{
+    background-color:#feeaac;
+    padding-bottom:30px;
+    padding-top:100px;
+  }
+  
+  .first-title{
+    height:75px;
+    width:300px;
+    margin-top:100px;
+  }
+  
+  .first-title h2{
+    font-size:36px;
+    transform: translateY(-15%);
+}
+  
+  .second-title{
+    height:50px;
+    width:550px;
+    margin-top:17px;
+  }
+  
+  .second-title h2{
+    font-size:27px;
+    transform: translateY(-25%);
+  }
+  
+  .third-title{
+    margin:0 auto;
+    height:60px;
+    width:330px;
+    background-color:#fff;
+    margin-top:20px;
+    transform: rotate(-9deg);
+    opacity:0.9;
+  }
+  
+  .third-title h2{
+    font-size:36px;
+    color:#3d4d6d;
+    transform: translateY(-23%);
+  }
+
+  .socialNav{
+    display:block;
+    float:right;
+    margin-top:-25px;
+    margin-right:20px;
+  }
+
+  .socialNav img{
+    height:32px;
+    width:32px;
+    margin:2px 0 2px 0;
+    border-radius: 30px;
+    background-color:#3c4c71;
+ }
+
 }
 
-@media screen and (min-width: 715px) {
-    .wideNav {
-        margin-right: 85px !important;
+/*     DESKTOP MEDIA QUERY BEGINS    */
+
+@media screen and (min-width:961px) {
+
+  .mainHeader{ margin: 0 auto; height:750px; }
+
+  .navBlock{ 
+      max-width:1120px !important;
     }
+
+  .headerIcon img{ width:140px; margin:40px 0 0 80px; }
+
+  #deskNav{
+    width:600px;
+    margin-top:40px;
+    margin-right:-100px;
+    padding:17px 0 17px 0;
+  }
+
+  #deskNav a{
+    font-family: 'kohinoor_banglaregular',sans-serif;
+    font-size:16px;
+    color:#000;
+    padding:0 25px 0 25px;
+    margin:0 10px 0 10px;
+  }
+
+  #deskNav a.selected{
+    background-color:#feeaac;
+    padding-bottom:40px;
+    padding-top:100px;
+  }
+
+  #deskNav a:hover{
+    color:#fff;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .first-title{
+    height:90px;
+    width:400px;
+    margin-top:147px;
+  }
+
+  .first-title h2{ font-size:48px; transform: translateY(-13%); }
+
+  .second-title{
+    height:75px;
+    width:735px;
+    margin-top:24px;
+  }
+
+  .second-title h2{ font-size:36px; transform: translateY(-16%); }
+
+  .third-title{
+    height:80px;
+    width:430px;
+    margin-top:25px;
+  }
+
+  .third-title h2{ font-size:48px; transform: translateY(-17%); }
+
+  .socialNav{
+    display:block;
+    position:fixed;
+    width:100%;
+    text-align:right;
+  }
+
+  .socialNav ul{ margin:-30px 50px 0 0; }
+
+  .socialNav img{
+    height:32px;
+    width:32px;
+    margin:2px 0 2px 0;
+    border-radius: 30px;
+    background-color:#3c4c71;
+ }
+
+ .socialNav img:hover{
+   background-color:#fff;
+   -webkit-transition-duration: 0.3s;
+   -webkit-transition-timing-function: ease-in-out;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+ }
+
+
 }
