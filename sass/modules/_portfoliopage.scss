@@ -1,22 +1,39 @@
 .portPage {
     h3 {
-        font-size: 2.25em;
-        margin: 50px;
+        font-size: 2em;
+        margin: 25px 50px;
+        line-height: 1.25;
     }
-
+    
     a {
-        margin-bottom: 50px;
         padding: 10px;
     }
+    
+    img {
+        width: 100%;
+    }
+
+    
 
     .traaSite {
         background-color: #095b6b;
-        height: 200px;
         h3 { color: #a3c156; }
         a { 
             background-color: #a3c156; 
             color: #095b6b; 
             margin: 50px;
+        }
+
+        #traa-img {
+            width: 100%;
+            height: 226px;
+            background-image: url("/images/portfolio_showcase_01.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        #traaCon {
+            padding: 50px 0;
         }
     }
 
@@ -28,6 +45,19 @@
             color: #e6d8b1; 
             margin: 50px;
         }
+
+        #baby-img {
+            width: 100%;
+            height: 226px;
+            background-image: url("/images/portfolio_showcase_02.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top;
+        }
+
+        #driverCon {
+            padding: 50px 0;
+        }
     }
 
     .illSite {
@@ -37,6 +67,48 @@
             background-color: #fce0c4; 
             color: #ef6c89; 
             margin: 50px;
+        }
+
+        #ill-img {
+            width: 100%;
+            height: 226px;
+            background-image: url("/images/portfolio_showcase_03.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top;
+        }
+
+        #illCon {
+            padding: 50px 0;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 641px) {
+    .portPage {
+        section {
+            display: flex;
+    
+            #traaCon, #driverCon, #illCon {
+                margin: auto; 
+            }
+
+            #traa-img {
+                max-width: 50%;
+                min-height: 500px;
+            }
+
+            #baby-img {
+                max-width: 50%;
+                min-height: 500px;
+            }
+
+            #ill-img {
+                max-width: 50%;
+                min-height: 500px;
+            }
         }
     }
 }

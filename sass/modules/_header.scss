@@ -9,8 +9,8 @@
 
     .burgButton {
         float: right;
-        width: 48px;
-        height: 35px;
+        width: 58px;
+        height: 50px;
         margin: 10px 20px;
         background: none;
         border: none;
@@ -28,7 +28,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 641px) {
     .mainHeader {
 
         .headerIcon{
@@ -38,25 +38,27 @@
         .wideNav {
             display: block !important;
             float: right;
-            margin-right: 15px;
+            margin-right: 50px;
 
-            ul {
-                background-color: $light-blue;
-                padding: 20px;
-
-                li {
-                    display: inline;
-                    padding: 5px;
-
-                    a {
-                        text-decoration: none;
-                        padding: 10px;
-                    }
-
-                    a.selected {
-                        background-color: $light-yellow;
-                        padding-top: 100px;
-                        padding-bottom: 50px;
+            #deskNav {
+                ul {
+                    background-color: $light-blue;
+                    padding: 20px;
+    
+                    li {
+                        display: inline;
+                        padding: 5px;
+    
+                        a {
+                            text-decoration: none;
+                            padding: 10px;
+                        }
+    
+                        a.selected {
+                            background-color: $light-yellow;
+                            padding-top: 100px;
+                            padding-bottom: 50px;
+                        }
                     }
                 }
             }
@@ -65,5 +67,11 @@
         button {
             display: none;
         }
+    }
+}
+
+@media screen and (min-width: 715px) {
+    .wideNav {
+        margin-right: 85px !important;
     }
 }
