@@ -1,7 +1,23 @@
+/*   FONT IMPORT   */
+
 @font-face {
     font-family: 'kohinoor_banglamedium';
     src: url('../fonts/kohinoorbangla-medium-webfont.woff2') format('woff2'),
          url('kohinoorbangla-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kohinoor_banglabold';
+    src: url('.../fonts/kohinoorbangla-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kohinoorbangla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kohinoor_banglaregular';
+    src: url('../fonts/kohinoorbangla-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kohinoorbangla-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

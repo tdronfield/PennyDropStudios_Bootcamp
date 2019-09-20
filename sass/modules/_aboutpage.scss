@@ -1,0 +1,282 @@
+$primary-color:white;
+$secondary-color:#fcd95a;
+$tertiary-color:#3d4d6d ;
+$body-font:'kohinoor_banglaregular', sans-serif;
+$title-font:'kohinoor_banglamedium', sans-serif;
+$h2-title:25px;
+$h3-title:25px;
+$h4-title:18px;
+
+%basic-button{
+    font-family:$title-font;
+    font-size:12px;
+    border:none;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:5px 15px 5px 15px;
+    margin-bottom:15px;
+}
+
+
+h2{
+    text-align:center;
+    font-family: $title-font;
+    text-transform:uppercase;
+    color:$primary-color;
+    font-size:$h2-title;
+}
+
+p{ color:$primary-color; font-family:$body-font; }
+
+%video-buttons{
+    width:40px;
+    height:40px;
+    border:none;
+    background:none;
+}
+
+.aboutVideo{
+    margin:0 auto;
+    text-align:center;
+    background-image:url('../images/aboutvideo-bg.jpg');
+    background-size:cover;
+
+    video{
+        margin:0 auto;
+        margin:35px 0 20px 0;
+        width:325px;
+        height:185px;
+        background-color:#333;
+    }
+}
+
+.video-controls{
+    margin:0 25px 0 25px;
+    padding-bottom:20px;
+    justify-content:space-between;
+    display:flex;
+
+    button{ @extend %video-buttons; }
+
+    .play{ background-image:url('../images/icons/ui-video-play.svg'); }
+    .pause{ background-image:url('../images/icons/ui-video-pause.svg'); }
+    .stop{ background-image:url('../images/icons/ui-video-stop.svg'); }
+    .volume-down{ background-image:url('../images/icons/ui-video-voldown.svg'); }
+    .volume-up{ background-image:url('../images/icons/ui-video-volup.svg'); }
+}
+
+.services{
+    background: rgba(252,201,16,1);
+    background: -moz-linear-gradient(top, rgba(252,201,16,1) 0%, rgba(253,220,111,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,201,16,1)), color-stop(100%, rgba(253,220,111,1)));
+    background: -webkit-linear-gradient(top, rgba(252,201,16,1) 0%, rgba(253,220,111,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,201,16,1) 0%, rgba(253,220,111,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,201,16,1) 0%, rgba(253,220,111,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,201,16,1) 0%, rgba(253,220,111,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc910', endColorstr='#fddc6f', GradientType=0 );
+
+    h2{
+        padding:40px 0 40px 0;
+        background-color:#fcb000;
+        width:100%;
+    }
+
+}
+
+#serviceList{
+    margin:0 auto;
+    padding-bottom:65px;
+
+    #serviceCol1, #serviceCol2, #serviceCol3, #serviceCol4{ 
+        margin: 0 auto;
+        text-align:center;
+        display:flex; 
+        flex-wrap:wrap; 
+        justify-content:space-between;
+        width:300px;
+    }
+
+    img{
+        width:100px;
+        height:100px;
+        padding:50px 20px 10px 20px;
+    }
+
+    p{
+        color:$tertiary-color;
+        font-family:$body-font;
+        font-size:20px;
+        line-height:24px;
+    }
+
+}
+
+.theTeam{
+    margin:0 auto;
+    padding-bottom:50px;
+    background: rgba(68,179,207,1);
+    background: -moz-linear-gradient(top, rgba(68,179,207,1) 0%, rgba(59,159,192,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,179,207,1)), color-stop(100%, rgba(59,159,192,1)));
+    background: -webkit-linear-gradient(top, rgba(68,179,207,1) 0%, rgba(59,159,192,1) 100%);
+    background: -o-linear-gradient(top, rgba(68,179,207,1) 0%, rgba(59,159,192,1) 100%);
+    background: -ms-linear-gradient(top, rgba(68,179,207,1) 0%, rgba(59,159,192,1) 100%);
+    background: linear-gradient(to bottom, rgba(68,179,207,1) 0%, rgba(59,159,192,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b3cf', endColorstr='#3b9fc0', GradientType=0 );
+    
+    h2{
+        padding:65px 0 35px 0;
+    }
+
+    p{  
+        margin:0 auto;
+        font-family:'kohinoor_banglaregular', sans-serif;
+        font-size:14px;
+        line-height:18px;
+        width:325px;
+        text-align:center;
+        padding-bottom:35px;
+
+    }
+
+    img{
+        width:100%;
+        padding-bottom:15px;
+    }
+
+    .members{
+        margin:0 auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        width:80%;
+    }
+
+    h3{
+        color:$secondary-color;
+        font-size:$h3-title;
+        padding-bottom:5px;
+    }
+
+    h4{
+        color:$tertiary-color;
+        font-size:$h4-title;
+        padding-bottom:20px;
+    }
+
+    button{
+        @extend %basic-button;
+        background-color:$secondary-color;
+        color:$tertiary-color;
+    }
+
+}
+
+/*     TABLET MEDIA QUERY BEGINS    */
+
+@media screen and (min-width: 641px) {
+
+    $h2-title:36px;
+    $h3-title:25px;
+    $h4-title:18px;
+
+    h2{ font-size:$h2-title; padding:40px 0 40px 0; }
+
+    .aboutVideo{
+        padding:70px 0 70px 0;
+
+        video{
+            width:80%;
+            height:350px;
+        }
+
+        .video-controls{
+            margin:0 auto;
+            width:80%;
+        }
+
+    }
+
+    #serviceList{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        
+        #serviceCol1, #serviceCol2, #serviceCol3, #serviceCol4{ 
+            width:43%;
+        }
+
+    }
+
+    .theTeam{
+
+        p{
+            width:540px;
+            font-size:14px;
+            margin-bottom:30px;
+        }
+
+        .members{
+            margin:0 auto;
+            display:flex;
+            justify-content:space-evenly;
+            flex-wrap:wrap;
+            max-width:768px;
+        }
+
+        #member1, #member2, #member3, #member4{
+            width:45%;
+        }
+    }
+}
+
+/*     DESKTOP MEDIA QUERY BEGINS    */
+
+@media screen and (min-width:961px) {
+
+    $h2-title:48px;
+    $h3-title:36px;
+    $h4-title:24px;
+    $max-width:980px !important;
+
+    h2{ font-size:$h2-title; }
+
+    .aboutVideo{
+        video{
+            max-width:$max-width;
+        }
+        .video-controls{
+            max-width:$max-width;
+        }
+    }
+
+    .services{
+        
+        justify-content:space-evenly;
+
+        #serviceList{
+            max-width:$max-width;
+        }
+        #serviceCol1, #serviceCol2, #serviceCol3, #serviceCol4{ 
+            justify-content:space-evenly;
+            width:50%;
+        }
+
+    }
+
+    .theTeam{
+        .members{
+            max-width:$max-width;
+        }
+
+        #member1, #member2, #member3, #member4{
+            width:40%;
+            margin-bottom:30px;
+        }
+
+        h3{ font-size:$h3-title; }
+        h4{ font-size:$h4-title; }
+        button{ font-size:16px; }
+
+    }
+
+}
