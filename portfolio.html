@@ -11,41 +11,62 @@
 <body>
     <header class="mainHeader">
         <h1 class="hidden">Main Header</h1>
-        
-        <div class="headerIcon">
-            <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo">
-        </div>
+        <header class="navBlock">
 
-        <button class="burgButton"><img src="images/icons/burger.svg" alt="Burger Menu Button"></button>
-        
-        <div class="burgerMenu hidden">
-            <h3 class="hidden">Condensed Burger Menu</h3>
-            <ul>                
+          <div class="headerIcon">
+              <a href="index.html"><img src="images/bootcamp_logo.svg" alt="Penny Drop Studios Logo"></a>
+          </div>
+
+        <nav id="mainNav">
+          <nav id="navMobile">
+            <button id="button"></button>
+
+            <div id="burgerCon">
+              <h3 class="hidden">Condensed Burger Menu</h3>
+              <ul id="burgerMenu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-            </ul> 
-        </div>
-        
-        <div class="wideNav">
-            <nav id="deskNav">
-                <h2 class="hidden">Full Width Navigation Bar</h2>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="wideNav">
+              <h3 class="hidden">Full Width Navigation Bar</h3>
+              <nav id="deskNav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="portfolio.html" class="selected">PORTFOLIO</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </nav>
-        </div>
+              </nav>
+          </div>
+        </nav>
+      </header>
+      <section class="hero">
+        <h2 class="hidden">Hero</h2>
+        <aside class="first-title">
+          <h2>PORTFOLIO</h2>
+        </aside>
+        <aside class="second-title">
+          <h2>LET US SHOW YOU WHAT WE CAN DO</h2>
+        </aside>
+        <aside class="third-title">
+          <h2>OUR PROJECTS</h2>
+        </aside>
+      </section>
 
-        <section class="hero">
-            <h2 class="hidden">Portfolio Page Hero</h2>
-            <h2>PORTFOLIO</h2>
-            <H2>LET US SHOW YOU WHAT WE CAN DO</H2>
-            <H2>PROJECTS</H2>
-        </section>      
+      <section class="socialNav">
+        <h2 class="hidden">Social Media</h2>
+        <ul>
+          <li><a href="#" target="_blank"><img src="images/icons/sm-facebook.svg" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank"><img src="images/icons/sm-twitter.svg" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank"><img src="images/icons/sm-instagram.svg" alt="Instagram"></a></li>
+          <li><a href="#" target="_blank"><img src="images/icons/sm-behance.svg" alt="Behance"></a></li>
+        </ul>
+      </section>
     </header>
     
     <main class="portPage">

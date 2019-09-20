@@ -147,6 +147,54 @@
 /*     TABLET MEDIA QUERY BEGINS    */
 
 @media screen and (min-width: 641px) {
+  .mainHeader{ height:600px; }
+
+  #navMobile{ display:none; }
+
+  .navBlock{
+      margin:0 auto;
+      width:100%;
+      justify-content:space-between;
+  }
+
+  .headerIcon img{ width:120px; margin:40px 0 0 40px;}
+
+  .wideNav{ display:block; margin-right:40px; }
+
+  #deskNav{
+    background-color:#c9e9eb;
+    width:425px;
+    margin-top:40px;
+    padding:12px 0 12px 0;
+    display:inline-flex;
+    justify-content:center;
+  }
+
+  #deskNav li{ display:inline; }
+
+  #deskNav a{
+    font-family: 'kohinoor_banglaregular',sans-serif;
+    font-size:14px;
+    color:#000;
+    padding:0 20px 0 20px;
+  }
+
+  #deskNav a.selected{
+    background-color:#feeaac;
+    padding-bottom:30px;
+    padding-top:100px;
+  }
+
+  .first-title{
+    height:75px;
+    width:300px;
+    margin-top:100px;
+  }
+
+  .first-title h2{
+    font-size:36px;
+    transform: translateY(-15%);
+}
   
   .second-title{
     height:50px;
