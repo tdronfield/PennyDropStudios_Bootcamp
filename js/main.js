@@ -16,10 +16,12 @@ import Team from './modules/DataObject.js';
 		memberDesc = document.querySelector('.u-bio');
 
 	const bioData = [ // houseData[0][1]
-	["mikka_thumb_01.jpg", `Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
-	["mikka_thumb_01.jpg", `Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
-	["mikka_thumb_01.jpg", `Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
-	["mikka_thumb_01.jpg", `Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`] 
+	[`Mikka Azores`, `UI/UX, WebDev`, `Mikka is a 22-year old Multimedia Designer who moved all the way from sunny Philippines to Canada eight months ago in order to further her skills and knowledge in design.
+
+	In between the moments she spends on her laptop, you can find her reading a book, getting mad at the Philippines' drug war, crying about missing her dogs, eating ice cream, spending time with friends, and documenting her life through writing, photos, and videos. Videos most of all, which she loves compiling into one movie.`],
+	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
+	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
+	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`] 
 ];
 
 	function hamburgerMenu() {
@@ -36,10 +38,10 @@ import Team from './modules/DataObject.js';
 			//on each of the sigils
 			console.log(this.dataset.offset);
 
-			memberImage.src = `images/about-photos/${bioData[multiplier][0]}`;
-			memberName.textContent = `${bioData[multiplier][1]}`;
-			memberRole.textContent = bioData[multiplier][2];
-			memberDesc.textContent = bioData[multiplier][3]
+			memberImage.src = `images/about-photos/${multiplier}_thumb_04.jpg`;
+			memberName.textContent = `${bioData[multiplier][0]}`;
+			memberRole.textContent = bioData[multiplier][1];
+			memberDesc.textContent = bioData[multiplier][2]
 		});
 	});
 
@@ -50,5 +52,5 @@ import Team from './modules/DataObject.js';
 
 
 	button.addEventListener("click", hamburgerMenu, false);
-	bioExit.addEventListener("click", hideBio)
+	bioExit.addEventListener("click", hideBio);
 })();
