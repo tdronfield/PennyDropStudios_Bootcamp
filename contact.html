@@ -25,46 +25,72 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="featured.html">FEATURED</a></li>
             </ul> 
         </div>
         
         <div class="wideNav">
             <h3 class="hidden">Full Width Navigation Bar</h3>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="featured.html">FEATURED</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+            <nav id="deskNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-
-        
-    </header>
-    <main class="contactPage">
-        <h1 class="hidden">Contact Information</h1>
 
         <section class="hero">
             <h2 class="hidden">About Page Hero</h2>
             <h2></h2>
         </section>
+    </header>
+    
+    <main class="contactPage">
+        <h1 class="hidden">Contact Information</h1>
 
         <section class="contactForm">
-            <form action="">
-                <h2>Get In Touch</h2>
-                <div> <!-- First Row in Form -->
-                    <div></div>
-                    <div></div>
+            <h2>Get In Touch</h2>
+            <div class="contactFormCont">
+                <form action="" method="get"> 
+                    <div id="first-form-row"> <!-- First Row in Form -->
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <br>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <br>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                    </div>
+                    <div id="second-form-row"> <!-- Second Row in Form -->
+                        <div>
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="text" name="email">
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <br>
+                            <input type="text" name="phone">    
+                        </div>
+                    </div>
+                    <div id="message-box"> <!-- Third Row in Form / Message Input-->
+                        <label for="message" name="message" id="form-message">Message</label>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div id="submit">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
+                <div id="contactMap">
+                    <h3>Look Us Up</h3>
+                    <img src="images/map.jpg" alt="Map of Our Location">
                 </div>
-                <div> <!-- Second Row in Form -->
-                    <div></div>
-                    <div></div>
-                </div>
-                <div> <!-- Third Row in Form / Message Input-->
-                    
-                </div>
-            </form>
+            </div>
         </section>
 
         <section class="contactInfo">
@@ -90,32 +116,35 @@
             <div id="socialAndIcon">
                 <div id="footerSocial">
                     <h3 class="hidden">Footer Social Media Links</h3>
-                    <ul>
-                        <li><a href="facebook.com"><img src="images/icons/sm-facebook.svg" alt="Facebook Icon"></a></li>
-                        <li><a href="twitter.com"><img src="images/icons/sm-twitter.svg" alt="Twitter Icon"></a></li>
-                        <li><a href="instagram.com"><img src="images/icons/sm-instagram.svg" alt="Instagram Icon"></a></li>
-                        <li><a href="behance.com"><img src="images/icons/sm-behance.svg" alt="Behance Icon"></a></li>
-                    </ul> 
+                    <nav>
+                        <ul>
+                            <li><a href="facebook.com"><img src="images/icons/sm-facebook.svg" alt="Facebook Icon"></a></li>
+                            <li><a href="twitter.com"><img src="images/icons/sm-twitter.svg" alt="Twitter Icon"></a></li>
+                            <li><a href="instagram.com"><img src="images/icons/sm-instagram.svg" alt="Instagram Icon"></a></li>
+                            <li><a href="behance.com"><img src="images/icons/sm-behance.svg" alt="Behance Icon"></a></li>
+                        </ul>
+                    </nav> 
                 </div>
                 <div id="footerIcon">
-                    <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo" width="129" height="107">
+                    <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo">
                 </div>
             </div>
             <div id="navLinks">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="featured.html">FEATURED</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div id="footCol2">
             <div id="contactInfo">
                 <div id="location">
                     <img src="images/icons/sm-address.svg" alt="Address Icon">
-                    <p>1035 Richmond St. <br><br> Unit 24 N6K4X7 <br><br> London, ON</p>
+                    <p>1035 Richmond St. <br> Unit 24 N6K4X7 <br> London, ON</p>
                 </div>
                 <div id="phone">
                     <img src="images/icons/sm-phone.svg" alt="Phone Icon">

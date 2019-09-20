@@ -11,13 +11,13 @@
 <body>
     <header class="mainHeader">
         <h1 class="hidden">Main Header</h1>
-        
+                
         <div class="headerIcon">
             <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo">
         </div>
-
-        <button class="burgButton"><img src="images/icons/burger.svg" alt="Burger Menu Button"></button>
         
+        <button class="burgButton"><img src="images/icons/burger.svg" alt="Burger Menu Button"></button>
+                
         <div class="burgerMenu hidden">
             <h3 class="hidden">Condensed Burger Menu</h3>
             <ul>                
@@ -25,22 +25,20 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="featured.html">FEATURED</a></li>
             </ul> 
         </div>
-        
+                
         <div class="wideNav">
             <h3 class="hidden">Full Width Navigation Bar</h3>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="featured.html">FEATURED</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-
-        
+            <nav id="deskNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </nav>
+        </div>   
     </header>
 
     <main>
@@ -53,37 +51,58 @@
 
         <section class="projectInfo">
             <div id="featProblem">
-                <h3>The Project</h3>
+                <div>
+                    <img src="images/icons/ft-project.svg" alt="Project Icon" width="50">
+                    <h3>THE PROJECT</h3>
+                </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur cupiditate obcaecati aliquam exercitationem, in ullam fuga accusantium suscipit. Nihil est id magnam perferendis illum quas nostrum velit nisi error iste?</p>
             </div>
             <div id="featSolution">
-                <h3>The Solution</h3>
+                <div>
+                    <img src="images/icons/ft-solution.svg" alt="Solution Icon" width="50">
+                    <h3>SOLUTION</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, porro! Inventore saepe deserunt dolores accusamus quaerat nulla quas voluptatum. Quasi, id. Alias corrupti recusandae minima tempora ipsa iste quas ipsam?</p>
             </div>
             <div id="featAwards">
-                <h3>Awards</h3>
+                <div>
+                    <img src="images/icons/ft-award.svg" alt="Award Icon" width="50">
+                    <h3>AWARDS</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quidem eligendi. Dolor ducimus vel aliquid minima obcaecati quisquam culpa, rem commodi omnis nulla doloribus, corrupti alias, magni natus maxime eum.</p>
             </div>
             <div id="featRole">
-                <h3>Role</h3>
+                <div>
+                    <img src="images/icons/ft-role.svg" alt="Role Icon" width="50">
+                    <h3>ROLE</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quidem eligendi.</p>
             </div>
             <div id="featRole2">
-                <h3>Role</h3>
+                <div>
+                    <img src="images/icons/ft-role.svg" alt="Role Icon" width="50">
+                    <h3>ROLE</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quidem eligendi. </p>
             </div>
         </section>
 
         <section class="projGallery">
             <h2 class="hidden">Featured Gallery</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="images/feature_01_traa.jpg" alt="Thames River Anglers Association">
+            <div>
+                <img src="images/feature_02_traa.jpg" alt="About the TRAA">
+                <img src="images/feature_03_traa.jpg" alt="Salmonid Monitoring Program">
+            </div>
+            <img src="images/feature_04_traa.jpg" alt="Stream Rehabilition Project">
 
-            <button></button>
-            <button></button>
-            <button></button>
+            <div id="portNav">
+                <button><img src="images/icons/ui-slider-left.svg" alt="Arrow Left"></button>
+                <div>
+                    <a href="portfolio.html">BACK TO PORTFOLIO</a>
+                </div>
+                <button><img src="images/icons/ui-slider-right.svg" alt="Arrow Right"></button>
+            </div>
         </section>
     </main>
 
@@ -93,32 +112,35 @@
             <div id="socialAndIcon">
                 <div id="footerSocial">
                     <h3 class="hidden">Footer Social Media Links</h3>
-                    <ul>
-                        <li><a href="facebook.com"><img src="images/icons/sm-facebook.svg" alt="Facebook Icon"></a></li>
-                        <li><a href="twitter.com"><img src="images/icons/sm-twitter.svg" alt="Twitter Icon"></a></li>
-                        <li><a href="instagram.com"><img src="images/icons/sm-instagram.svg" alt="Instagram Icon"></a></li>
-                        <li><a href="behance.com"><img src="images/icons/sm-behance.svg" alt="Behance Icon"></a></li>
-                    </ul> 
+                    <nav>
+                        <ul>
+                            <li><a href="facebook.com"><img src="images/icons/sm-facebook.svg" alt="Facebook Icon"></a></li>
+                            <li><a href="twitter.com"><img src="images/icons/sm-twitter.svg" alt="Twitter Icon"></a></li>
+                            <li><a href="instagram.com"><img src="images/icons/sm-instagram.svg" alt="Instagram Icon"></a></li>
+                            <li><a href="behance.com"><img src="images/icons/sm-behance.svg" alt="Behance Icon"></a></li>
+                        </ul>
+                    </nav> 
                 </div>
                 <div id="footerIcon">
-                    <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo" width="129" height="107">
+                    <img src="images/bootcamp_logo.svg" alt="Penny Drop Studio Logo">
                 </div>
             </div>
             <div id="navLinks">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="featured.html">FEATURED</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div id="footCol2">
             <div id="contactInfo">
                 <div id="location">
                     <img src="images/icons/sm-address.svg" alt="Address Icon">
-                    <p>1035 Richmond St. <br><br> Unit 24 N6K4X7 <br><br> London, ON</p>
+                    <p>1035 Richmond St. <br> Unit 24 N6K4X7 <br> London, ON</p>
                 </div>
                 <div id="phone">
                     <img src="images/icons/sm-phone.svg" alt="Phone Icon">

@@ -5,18 +5,29 @@
         margin: 50px 0 50px 0;
         color: $deep-blue;
         font-size: 2.25em;
+        line-height: 1.5;
     }
 
-    p {
-        display: none;
-    }
+    #confidentDesign { display: none; }
 
     .workCont {
-        margin: 0 50px; 
+        width: 215px;
+        margin: auto; 
 
-        h3 {
-            margin: 25px 0;
-            color: $deep-blue;
+        div {
+            margin-top: 50px;
+            
+
+            img {
+                width: 215px;
+                margin: auto;
+            }
+    
+            h3 {
+                margin: 25px 0;
+                color: $deep-blue;
+                line-height: 1.5;
+            }
         }
     }
 
@@ -41,10 +52,10 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 641px) {
     .ourWork {
 
-        p {
+        #confidentDesign {
             display: block !important;
             margin: 50px 75px;
             text-align: center;
@@ -52,7 +63,7 @@
 
         .workCont {
             display: flex;
-            margin: 50px 35px !important;
+            width: 100%;
 
             div{
                 margin: 0 auto;
