@@ -2,9 +2,12 @@
     width: 100%;
     
     .headerIcon {
-        width: 20%;
+        width: 10%;
         display: inline-block;
-        margin: 10px 0 0 10px;
+        margin: 25px 0 0 25px;
+        img {
+            width: 100px;
+        }
     }
 
     .burgButton {
@@ -52,6 +55,12 @@
                         a {
                             text-decoration: none;
                             padding: 10px;
+                            color: black;
+                        }
+
+                        a:hover {
+                            color: white;
+                            transition: all 0.5s ease-in-out; 
                         }
     
                         a.selected {

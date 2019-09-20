@@ -86,13 +86,14 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     .contactFormCont {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
         form {
+            width: 375px;
             margin: 0 !important;
         }
 
@@ -101,6 +102,7 @@
             
             h3 {
                 margin: 15px 0;
+                color: $deep-blue;
             }
             img {
                 
