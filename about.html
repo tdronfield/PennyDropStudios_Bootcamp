@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/biopage.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Penny Drop Studios</title>
 </head>
@@ -34,7 +34,7 @@
             </div>
           </nav>
 
-          <div class="hidden wideNav">
+          <div class="wideNav">
               <h3 class="hidden">Full Width Navigation Bar</h3>
               <nav id="deskNav">
                 <ul>
@@ -144,33 +144,55 @@
             </article>
         </section>
 
+        <section id="member-bio">
+            <div class="bio-wrapper">
+                <section class="bio-exit">
+                    <h2 class="hidden">Back to Homepage</h2>
+                    <h2>x</h2>  
+                </section>
+
+                <section class="bio-image">
+                    <img class="u-image" src="" alt="user image" width="100%">
+                </section>
+                
+                <section class="bio-maininfo">
+                    <h1 class="u-name"></h1>
+                    <h4 class="u-role"></h4>
+                </section>
+                
+                <section class="bio-desc">
+                    <p class="u-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat maxime iure voluptatem. Incidunt exercitationem rerum, alias sunt iusto ullam. Deleniti eligendi unde quam autem praesentium doloribus voluptas! Quis, eaque illum.</p>
+                </section>
+            </div>
+        </section>
+
         <section class="theTeam">
             <h2>Meet Our Team</h2>
             <p>Penny Drop Studio wouldn’t be the studio that we are today without our dedicated and passionate crew. Here we are putting a face to the Penny Drop team. Go ahead and get to know us, and we invite you to return the favour.</p>
             <section class="members">
                 <div id="member1">
-                    <img src="images/about-photos/mikka_thumb_01.jpg" alt="Mikka Azores">
+                    <img src="images/about-photos/0_thumb_01.jpg" alt="Mikka Azores">
                     <h3>MIKKA AZORES</h3>
                     <h4>UI/UX DESIGN, WEBDEV</h4>
-                    <button>Read More</button>
+                    <button class="bio-button" data-offset="0">Read More</button>
                 </div>
                 <div id="member2">
-                    <img src="images/about-photos/kateh_thumb_01.jpg" alt="Kateh Mayman">
+                    <img src="images/about-photos/1_thumb_01.jpg" alt="Kateh Mayman">
                     <h3>KATEH MAYMAN</h3>
                     <h4>GRAPHIC DESIGN</h4>
-                    <button>Read More</button>
+                    <button class="bio-button" data-offset="1">Read More</button>
                 </div>
                 <div id="member3">
-                    <img src="images/about-photos/taylor_thumb_01.jpg" alt="Taylor Dronfield">
+                    <img src="images/about-photos/2_thumb_01.jpg" alt="Taylor Dronfield">
                     <h3>TAYLOR DRONFIELD</h3>
                     <h4>WEB DEVELOPMENT</h4>
-                    <button>Read More</button>
+                    <button class="bio-button" data-offset="2">Read More</button>
                 </div>
                 <div id="member4">
-                    <img src="images/about-photos/megan_thumb_01.jpg" alt="Megan Nguyen">
+                    <img src="images/about-photos/3_thumb_01.jpg" alt="Megan Nguyen">
                     <h3>MEGAN NGUYEN</h3>
                     <h4>GRAPHIC & MOTION DESIGN</h4>
-                    <button>Read More</button>
+                    <button class="bio-button" data-offset="3">Read More</button>
                 </div>
             </section>
         </section>
@@ -229,6 +251,6 @@
             </div>
         </footer>
       </main>
-      <script src="js/main.js"></script>
+      <script type="module" src="js/main.js"></script>
     </body>
 </html>

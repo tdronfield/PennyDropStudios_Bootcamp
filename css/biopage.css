@@ -1,0 +1,98 @@
+#member-bio {
+    width: 100%; 
+    height: 100%;
+    left: -100%;
+    background-color: #171717;
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+  
+#member-bio.slideToggle {
+    left: 0 !important;
+}
+
+.bio-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.bio-exit {
+    z-index: 3;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.bio-exit h2 {
+    color: #fcd95a;
+}
+
+.bio-maininfo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #40acc6;
+    padding: 25px 35px;
+    margin-top: -5px;
+}
+
+h1.u-name {
+    font-family: "kohinoor_banglamedium",sans-serif;
+    color: #fcd95a;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+h4.u-role {
+    color: #3d4d6d;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.bio-desc {
+    padding: 40px 40px 50px 40px;
+    height: 100%;
+    background-color: #fbbd4c;
+}
+
+.bio-desc p {
+    color: #000000;
+    font-family: "kohinoor_banglamedium",sans-serif;
+}
+
+@media screen and (min-width: 641px) {
+    .bio-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 100%;
+        position: relative;
+    }
+
+    .bio-image {
+        flex-grow: 3;
+    }
+    .bio-desc {
+        order: 2;
+    }
+
+    .bio-maininfo {
+        order: 3;
+        position: absolute;
+        width: 85%;
+        z-index: 3; 
+    }
+}
