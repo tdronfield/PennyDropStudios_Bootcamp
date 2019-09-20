@@ -10,6 +10,7 @@
 
     p {
         padding: 0 20px 50px 50px;
+        line-height: 2;
     }
 
     #greatIdeas {
@@ -45,7 +46,6 @@
 
         p {
             color: white;
-            line-height: 1.25;
         }
     }
 }
@@ -61,10 +61,11 @@
         }
         
         p {
-            padding: 50px; 
+            max-width: 400px;
         }
 
         h2 {
+            text-align: left;
             width: 400px;
         } 
          
@@ -75,6 +76,10 @@
             div {
                 margin: auto;
                 min-width: 400px;
+
+                p {
+                    color: black;
+                }
             }
         }
 
@@ -85,6 +90,10 @@
             div {
                 margin: auto;
                 min-width: 400px;
+
+                p {
+                    color: black;
+                }
             }
         }
 
@@ -110,8 +119,18 @@
 
 @media screen and (min-width: 861px) {
     .whatWeDo {
+
         img {
-            max-width: 400px;
+            max-width: 425px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .whatWeDo {
+        img {
+            max-width: 600px;
         }
     }
 }
