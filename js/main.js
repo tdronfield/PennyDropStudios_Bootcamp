@@ -26,7 +26,9 @@ import Team from './modules/DataObject.js';
 
 	In between the moments she spends on her laptop, you can find her reading a book, getting mad at the Philippines' drug war, crying about missing her dogs, eating ice cream, spending time with friends, and documenting her life through writing, photos, and videos. Videos most of all, which she loves compiling into one movie.`],
 	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
-	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
+	[`Taylor Dronfield`, `Web Development`, `Taylor Dronfield is a 22-year-old Designer and Developer. She grew up in a small town and is now exploring her dreams in a bigger city.
+	
+	Taylor spends her free time drawing, bot digitally and traditionally, long boarding, eating all of the best food, spending time with her amazing friends, or studying to improve her design and development skills.`],
 	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`] 
 ];
 
