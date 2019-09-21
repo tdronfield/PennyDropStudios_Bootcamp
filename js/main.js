@@ -27,10 +27,14 @@ import Team from './modules/DataObject.js';
 	[`Mikka Azores`, `UI/UX, WebDev`, `Mikka is a 22-year old Multimedia Designer who moved all the way from sunny Philippines to Canada eight months ago in order to further her skills and knowledge in design.
 
 	In between the moments she spends on her laptop, you can find her reading a book, getting mad at the Philippines' drug war, crying about missing her dogs, eating ice cream, spending time with friends, and documenting her life through writing, photos, and videos. Videos most of all, which she loves compiling into one movie.`],
-	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
+	
+	[`Kateh Mayman`, `Graphic Design`, `Kateh is a 27-year-old graphic designer and illustrator whose formative years were spent living in Brussels, Belgium. Kateh graduated with a diploma in Graphic Design from Fanshawe College in 2015 and promptly moved to Vancouver where she worked as a freelance game artist and graphic designer in the independent game development industry.
+	
+	Now back in London, she can frequently be found playing video games, splashing around in some messy creative project, or habitually picking up her sketchbook to map out her current design gig. She lives with a very good cat and frustrates all landlords by tacking up her artwork all over her apartment walls.`],
+
 	[`Taylor Dronfield`, `Web Development`, `Taylor Dronfield is a 22-year-old Designer and Developer. She grew up in a small town and is now exploring her dreams in a bigger city.
 	
-	Taylor spends her free time drawing, bot digitally and traditionally, long boarding, eating all of the best food, spending time with her amazing friends, or studying to improve her design and development skills.`],
+	Taylor spends her free time drawing, both digitally and traditionally, long boarding, eating all of the best food, spending time with her amazing friends, or studying to improve her design and development skills.`],
 	[`Megan Nguyen`, `Graphic and Motion designer`, `Megan Nguyen is a Grapgic and Motion designer who was a former law student. She love making pretty things and decided to pursue her dream of being a creative designer.
 	
 	Beside struggling to learn new things for her professional career, Megan enjoy being distracted by good food and good food youtube chanels. If she were not in love with designing, she would make a pretty decent chef.`],
