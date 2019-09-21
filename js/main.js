@@ -31,7 +31,6 @@ import Team from './modules/DataObject.js';
 	[`Taylor Dronfield`, `Web Development`, `Taylor Dronfield is a 22-year-old Designer and Developer. She grew up in a small town and is now exploring her dreams in a bigger city.
 	
 	Taylor spends her free time drawing, bot digitally and traditionally, long boarding, eating all of the best food, spending time with her amazing friends, or studying to improve her design and development skills.`],
-	[`Mikka Azores`, `UI/UX, WebDev`, `Lorem Ipsummm`],
 	[`Megan Nguyen`, `Graphic and Motion designer`, `Megan Nguyen is a Grapgic and Motion designer who was a former law student. She love making pretty things and decided to pursue her dream of being a creative designer.
 	
 	Beside struggling to learn new things for her proffessional career, Megan enjoy being distracted by good food and good food youtube chanels. If she were not in love with designing, she would make a pretty decent chef.`],
