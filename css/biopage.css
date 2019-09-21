@@ -48,6 +48,10 @@
     margin-top: -5px;
 }
 
+.bio-maininfoDesktop {
+    display: none;
+}
+
 h1.u-name {
     font-family: "kohinoor_banglamedium",sans-serif;
     color: #fcd95a;
@@ -85,14 +89,45 @@ h4.u-role {
     .bio-image {
         flex-grow: 3;
     }
+
+    .bio-image img {
+        height: 80%;
+        width: auto;
+    }
+
     .bio-desc {
         order: 2;
     }
 
     .bio-maininfo {
-        order: 3;
-        position: absolute;
+        display: none;
+    }
+
+    .bio-maininfoDesktop {
         width: 85%;
-        z-index: 3; 
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        background-color: #40acc6;
+        padding: 55px 45px;
+        margin-top: -175px;
+        right: 0;
+        position: absolute;
+        z-index: 100;
+        display: block !important;
+    }
+
+    h1.u-nameD {
+        font-family: "kohinoor_banglamedium",sans-serif;
+        color: #fcd95a;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    
+    h4.u-roleD {
+        color: #3d4d6d;
+        font-size: 24px;
+        padding-top: 5px;
     }
 }
