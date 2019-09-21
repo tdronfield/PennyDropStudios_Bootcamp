@@ -13,6 +13,8 @@ import Team from './modules/DataObject.js';
 	const memberImage = document.querySelector('.u-image'),
 		memberName = document.querySelector('.u-name'),
 		memberRole = document.querySelector('.u-role'),
+		memberNameD = document.querySelector('.u-nameD'),
+		memberRoleD = document.querySelector('.u-roleD'),
 		memberDesc = document.querySelector('.u-bio'),
 		houseVideo = document.querySelector('.about-video'),
 		playButton = document.querySelector('#play'),
@@ -49,7 +51,9 @@ import Team from './modules/DataObject.js';
 			memberImage.src = `images/about-photos/${multiplier}_thumb_04.jpg`;
 			memberName.textContent = `${bioData[multiplier][0]}`;
 			memberRole.textContent = bioData[multiplier][1];
-			memberDesc.textContent = bioData[multiplier][2]
+			memberNameD.textContent = `${bioData[multiplier][0]}`;
+			memberRoleD.textContent = bioData[multiplier][1];
+			memberDesc.textContent = bioData[multiplier][2];
 		});
 	});
 
