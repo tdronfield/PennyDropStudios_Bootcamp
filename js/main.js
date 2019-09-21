@@ -33,7 +33,7 @@ import Team from './modules/DataObject.js';
 	Taylor spends her free time drawing, bot digitally and traditionally, long boarding, eating all of the best food, spending time with her amazing friends, or studying to improve her design and development skills.`],
 	[`Megan Nguyen`, `Graphic and Motion designer`, `Megan Nguyen is a Grapgic and Motion designer who was a former law student. She love making pretty things and decided to pursue her dream of being a creative designer.
 	
-	Beside struggling to learn new things for her proffessional career, Megan enjoy being distracted by good food and good food youtube chanels. If she were not in love with designing, she would make a pretty decent chef.`],
+	Beside struggling to learn new things for her professional career, Megan enjoy being distracted by good food and good food youtube chanels. If she were not in love with designing, she would make a pretty decent chef.`],
 	
 ];
 
